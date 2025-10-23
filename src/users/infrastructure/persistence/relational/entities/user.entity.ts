@@ -63,6 +63,9 @@ export class UserEntity extends EntityRelationalHelper {
   })
   status?: StatusEntity;
 
+  @Column({ type: Boolean, default: false })
+  policy?: boolean;
+
   @CreateDateColumn()
   createdAt: Date;
 

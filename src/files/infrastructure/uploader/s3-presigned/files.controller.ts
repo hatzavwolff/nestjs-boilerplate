@@ -6,10 +6,7 @@ import { FileUploadDto } from './dto/file.dto';
 import { FileResponseDto } from './dto/file-response.dto';
 
 @ApiTags('Files')
-@Controller({
-  path: 'files',
-  version: '1',
-})
+@Controller('files')
 export class FilesS3PresignedController {
   constructor(private readonly filesService: FilesS3PresignedService) {}
 

@@ -13,10 +13,7 @@ import { AuthAppleLoginDto } from './dto/auth-apple-login.dto';
 import { LoginResponseDto } from '../auth/dto/login-response.dto';
 
 @ApiTags('Auth')
-@Controller({
-  path: 'auth/apple',
-  version: '1',
-})
+@Controller('auth/apple')
 export class AuthAppleController {
   constructor(
     private readonly authService: AuthService,

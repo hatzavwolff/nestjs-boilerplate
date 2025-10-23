@@ -69,6 +69,14 @@ export class User {
   })
   status?: Status;
 
+  @ApiProperty({
+    type: Boolean,
+    example: true,
+    description: 'User consent to policy',
+  })
+  @Expose({ groups: ['me', 'admin'] })
+  policy?: boolean;
+
   @ApiProperty()
   createdAt: Date;
 

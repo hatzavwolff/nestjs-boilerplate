@@ -33,6 +33,7 @@ export class UserMapper {
       domainEntity.status.id = raw.status._id;
     }
 
+    domainEntity.policy = raw.policy;
     domainEntity.createdAt = raw.createdAt;
     domainEntity.updatedAt = raw.updatedAt;
     domainEntity.deletedAt = raw.deletedAt;
@@ -76,6 +77,7 @@ export class UserMapper {
     persistenceSchema.photo = photo;
     persistenceSchema.role = role;
     persistenceSchema.status = status;
+    persistenceSchema.policy = domainEntity.policy;
     persistenceSchema.createdAt = domainEntity.createdAt;
     persistenceSchema.updatedAt = domainEntity.updatedAt;
     persistenceSchema.deletedAt = domainEntity.deletedAt;

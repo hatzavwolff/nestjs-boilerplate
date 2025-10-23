@@ -62,6 +62,12 @@ export class UserSchemaClass extends EntityDocumentHelper {
   })
   status?: StatusSchema;
 
+  @Prop({
+    type: Boolean,
+    default: false,
+  })
+  policy?: boolean;
+
   @Prop({ default: now })
   createdAt: Date;
 

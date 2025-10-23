@@ -18,10 +18,7 @@ import { FilesS3Service } from './files.service';
 import { FileResponseDto } from './dto/file-response.dto';
 
 @ApiTags('Files')
-@Controller({
-  path: 'files',
-  version: '1',
-})
+@Controller('files')
 export class FilesS3Controller {
   constructor(private readonly filesService: FilesS3Service) {}
 
